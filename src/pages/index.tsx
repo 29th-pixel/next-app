@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import Announcement from "@/components/announcement";
+import Announcement from "@/components/Announcement";
 
 const inter = Inter({ subsets: ["latin"] });
 

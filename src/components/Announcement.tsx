@@ -12,8 +12,13 @@ const Announcement = () => {
         width={29.5}
         height={22.27}
       />
+
       <p>{announceData[0].announce.text}</p>
-      <Link style={{ textDecoration: "none" }} href={announceData[0].announce.href}>
+
+      <Link
+        className={"takeActionBttn"}
+        href={announceData[0].announce.href}
+      >
         Take Action
       </Link>
     </div>

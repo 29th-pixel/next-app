@@ -14,20 +14,20 @@ const Navbar = () => {
             height={30}
           />
         </Link>
-        <div className={"navItems"}>
+        <div className={"navContainer"}>
           <ul>
             <li>
-              <Link style={{ textDecoration: "none" }} href="\">
+              <Link className="navItems" href="\">
                 Invest
               </Link>
             </li>
             <li>
-              <Link style={{ textDecoration: "none" }} href="\">
+              <Link className="navItems" href="\">
                 Blogs
               </Link>
             </li>
             <li>
-              <Link style={{ textDecoration: "none" }} href="\">
+              <Link className="navItems" href="\">
                 About
               </Link>
             </li>
