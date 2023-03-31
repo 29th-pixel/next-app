@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../styles/Navbar.module.css"
 
 const Navbar = () => {
   return (
     <>
-      <nav className={"nav"}>
+      <nav className={styles.nav}>
         <Link href="\">
           <Image
             src="/images/topLogo.png"
@@ -14,27 +15,35 @@ const Navbar = () => {
             height={30}
           />
         </Link>
-        <div className={"navContainer"}>
+        <div className={styles.navContainer}>
           <ul>
             <li>
-              <Link className="navItems" href="\">
-                Invest
-              </Link>
+              <div className={styles.navDropDown}>
+                <Link className={styles.navItems} href="\">
+                  Invest
+                </Link>
+                <Image
+                  src="/images/arrow.png"
+                  alt="arrow"
+                  width={12}
+                  height={6}
+                />
+              </div>
             </li>
             <li>
-              <Link className="navItems" href="\">
+              <Link className={styles.navItems} href="\">
                 Blogs
               </Link>
             </li>
             <li>
-              <Link className="navItems" href="\">
+              <Link className={styles.navItems} href="\">
                 About
               </Link>
             </li>
           </ul>
         </div>
 
-        <button className={"navBarButton"}>Best Investment Options</button>
+        <button className={styles.navBarButton}>Best Investment Options</button>
       </nav>
     </>
   );
