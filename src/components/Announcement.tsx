@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import announceData from "../pages/api/announceData.json";
+import styles from "../styles/Announcement.module.css"
 
 const Announcement = () => {
   return (
-    <div className={"announcement-bar"}>
+    <div className={styles.announcementBar}>
       <Image
         src="/images/megaphone.png"
         alt="top logo"
@@ -16,7 +17,7 @@ const Announcement = () => {
       <p>{announceData[0].announce.text}</p>
 
       <Link
-        className={"takeActionBttn"}
+        className={styles.takeActionBttn}
         href={announceData[0].announce.href}
       >
         Take Action

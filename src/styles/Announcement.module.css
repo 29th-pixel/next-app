@@ -1,0 +1,28 @@
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+
+/* For Announcement Bar */
+
+.announcementBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  gap: 10px;
+
+  width: 100%;
+  height: 54px;
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  background: #f7f7f7;
+  backdrop-filter: blur(16px);
+  align-self: stretch;
+}
+
+.takeActionBttn {
+  text-decoration: none;
+  color: #7e8139;
+}
