@@ -1,6 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
 
-/* Main Page Content */
+/* Main Page Content Section One*/
 
 .pageContainer {
   width: 100%;
@@ -10,16 +10,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 0 72px;
+}
+
+.pageContainerGradient {
+  background: linear-gradient(180deg, #f6f6f6 0%, #f5fae7 100%);
+  border-radius: 0px 0px 80px 80px;
 }
 
 .contentContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 32px;
-  left: calc(50% - 837px / 2 - 0.5px);
-  top: calc(50% - 304px / 2 - 11px);
+  /* left: calc(50% - 837px / 2 - 0.5px);
+  top: calc(50% - 304px / 2 - 11px); */
 }
 
 .contentHeading {
@@ -29,11 +35,10 @@
   text-align: center;
   font-family: "Futura PT", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 96px;
   line-height: 115px;
   color: #121b64;
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -50,7 +55,6 @@
   text-align: center;
   justify-content: center;
   color: #32302f;
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -77,7 +81,7 @@
 
 .fCoin {
   position: absolute;
-  right: -53px;
+  right: 0px;
   top: 133px;
 }
 
@@ -91,4 +95,10 @@
   position: absolute;
   right: 69px;
   top: 517px;
+}
+
+.sectionTwoImage {
+  position: absolute;
+  top: 1022px;
+  left: 72px;
 }
