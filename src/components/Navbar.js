@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Navbar.module.css"
+import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
+
+  const [arrowState, setArrowState] = useState({})
+
   return (
     <>
       <nav className={styles.nav}>
@@ -22,12 +25,14 @@ const Navbar = () => {
                 <Link className={styles.navItems} href="\">
                   Invest
                 </Link>
-                <Image
-                  src="/images/arrow.png"
-                  alt="arrow"
-                  width={12}
-                  height={6}
-                />
+                {/* <div onClick={subMenuHandler}> */}
+                  <Image
+                    src="/images/arrow.png"
+                    alt="arrow"
+                    width={12}
+                    height={6}
+                  />
+                {/* </div> */}
               </div>
             </li>
             <li>

@@ -3,10 +3,10 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Announcement from "@/components/Announcement";
-
 import ContentSectionOne from "@/components/ContentSectionOne";
+import DropDownMenu from "@/components/DropDownMenu";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        {/* <DropDownMenu/> */}
         <Announcement />
         <ContentSectionOne />
       </main>

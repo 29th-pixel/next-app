@@ -5,7 +5,7 @@ import styles from "../styles/ContentSectionOne.module.css";
 const ContentSectionOne = () => {
   return (
     <div className={styles.pageContainer}>
-      {/* <div> */}
+
         <Image
           src="/images/rupeeGoldCoin.png"
           alt="gold coin image"
@@ -13,9 +13,7 @@ const ContentSectionOne = () => {
           height={300}
           className={styles.goldCoin}
         />
-      {/* </div> */}
 
-      {/* <div > */}
         <Image
           src="/images/fCoin.png"
           alt="f coin image"
@@ -23,7 +21,6 @@ const ContentSectionOne = () => {
           height={340}
           className={styles.fCoin}
         />
-      {/* </div> */}
 
       <div className={styles.contentContainer}>
         <h1 className={styles.contentHeading}>Stress-Free Investing</h1>
