@@ -12,6 +12,7 @@ const Announcement = () => {
         alt="top logo"
         width={29.5}
         height={22.27}
+        className={styles.megaPhone}
       />
 
       <p>{announceData[0].announce.text}</p>
