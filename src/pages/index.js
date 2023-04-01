@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
+// import Image from "next/image";
+// import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Announcement from "@/components/Announcement";
-import ContentSectionOne from "@/components/ContentSectionOne";
+import HeroSectionOne from "@/components/HeroSectionOne";
 import DropDownMenu from "@/components/DropDownMenu";
-
+import HeroSectionTwo from "@/components/HeroSectionTwo";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -20,7 +20,8 @@ export default function Home() {
       <main className={styles.main}>
         {/* <DropDownMenu/> */}
         <Announcement />
-        <ContentSectionOne />
+        <HeroSectionOne />
+        <HeroSectionTwo />
       </main>
     </>
   );

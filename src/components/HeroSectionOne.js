@@ -1,26 +1,29 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../styles/ContentSectionOne.module.css";
+import styles from "../styles/HeroSectionOne.module.css";
 
-const ContentSectionOne = () => {
+const HeroSectionOne = () => {
   return (
-    <div className={styles.pageContainer}>
-
+    <div className={["pageContainer", styles.sectionOneContainer].join(" ")}>
+      <div className={styles.goldCoin}>
         <Image
           src="/images/rupeeGoldCoin.png"
           alt="gold coin image"
-          width={300}
-          height={300}
-          className={styles.goldCoin}
-        />
+          layout="fill"
 
-        <Image
-          src="/images/fCoin.png"
-          alt="f coin image"
-          width={340}
-          height={340}
-          className={styles.fCoin}
+        // width={300}
+        // height={300}
+        // className={styles.goldCoin}
         />
+      </div>
+
+      <Image
+        src="/images/fCoin.png"
+        alt="f coin image"
+        width={340}
+        height={340}
+        className={styles.fCoin}
+      />
 
       <div className={styles.contentContainer}>
         <h1 className={styles.contentHeading}>Stress-Free Investing</h1>
@@ -50,4 +53,4 @@ const ContentSectionOne = () => {
   );
 };
 
-export default ContentSectionOne;
+export default HeroSectionOne;

@@ -1,0 +1,64 @@
+.sectionTwoContainer {
+  background: linear-gradient(180deg, #f6f6f6 0%, #f5fae7 100%);
+  border-radius: 0px 0px 80px 80px;
+  padding: 100px 72px;
+  display: flex;
+}
+
+.contentImage {
+  width: 500px;
+  height: 500px;
+  top: 1022px;
+  left: 72px;
+  background: #f4f3f3;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: 800px;
+}
+
+.contentHeading {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #121b64;
+}
+
+.content {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.exploreBttn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+  border: 1px solid #121b64;
+  border-radius: 55px;
+  color: #121b64;
+  font-weight: 500;
+  background: transparent;
+}
