@@ -5,17 +5,13 @@ import styles from "../styles/HeroSectionOne.module.css";
 const HeroSectionOne = () => {
   return (
     <div className={["pageContainer", styles.sectionOneContainer].join(" ")}>
-      <div className={styles.goldCoin}>
-        <Image
-          src="/images/rupeeGoldCoin.png"
-          alt="gold coin image"
-          layout="fill"
-
-        // width={300}
-        // height={300}
-        // className={styles.goldCoin}
-        />
-      </div>
+      <Image
+        src="/images/rupeeGoldCoin.png"
+        alt="gold coin image"
+        width={300}
+        height={300}
+        className={styles.goldCoin}
+      />
 
       <Image
         src="/images/fCoin.png"
@@ -28,7 +24,7 @@ const HeroSectionOne = () => {
       <div className={styles.contentContainer}>
         <h1 className={styles.contentHeading}>Stress-Free Investing</h1>
         <p className={styles.content}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
         </p>
         <button className={styles.waitlistBttn}>Join Waitlist</button>
