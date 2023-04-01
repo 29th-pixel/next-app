@@ -59,6 +59,12 @@ const Navbar = () => {
             alt="Menu Icon" />
         </div>
       </nav>
+
+      <div className={styles.subMenu}>  
+        <Link className={styles.subMenuItems} href='/'>FD Bazaar</Link>
+        <Link className={styles.subMenuItems} href='/'>Savings++</Link>
+        <Link className={styles.subMenuItems} href='/'>Tax Saver</Link>
+      </div>
     </>
   );
 };
