@@ -16,6 +16,7 @@ const Navbar = () => {
             alt="top logo"
             width={108.75}
             height={30}
+            className={styles.navbarLogo}
           />
         </Link>
         <div className={styles.navContainer}>
@@ -26,12 +27,12 @@ const Navbar = () => {
                   Invest
                 </Link>
                 {/* <div onClick={subMenuHandler}> */}
-                  <Image
-                    src="/images/arrow.png"
-                    alt="arrow"
-                    width={12}
-                    height={6}
-                  />
+                <Image
+                  src="/images/arrow.png"
+                  alt="arrow"
+                  width={12}
+                  height={6}
+                />
                 {/* </div> */}
               </div>
             </li>
@@ -49,6 +50,14 @@ const Navbar = () => {
         </div>
 
         <button className={styles.navBarButton}>Best Investment Options</button>
+
+        <div className={styles.hamburgerMenu}>
+          <Image
+            src="/images/hamburgerIcon.png"
+            width={24}
+            height={24}
+            alt="Menu Icon" />
+        </div>
       </nav>
     </>
   );
