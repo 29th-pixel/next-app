@@ -5,12 +5,13 @@ import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
 
-  const [arrowState, setArrowState] = useState(styles.none)
-  const onClickClose = () => {
-    if (arrowState === styles.none)
-      setArrowState(styles.flex);
+  const [arrowState, setArrowState] = useState(styles.hideSubMenu)
+
+  const onClick = () => {
+    if (arrowState === styles.hideSubMenu)
+      setArrowState(styles.subMenu);
     else
-      setArrowState(styles.none);
+      setArrowState(styles.hideSubMenu);
   };
 
   return (
@@ -35,18 +36,14 @@ const Navbar = () => {
                 <Link className={styles.navItems} href="\">
                   Invest
                 </Link>
-                {/* <div onClick={subMenuHandler}> */}
-                <button onClick={onClickClose}>
-                  <Image
-                    src="/images/arrow.png"
-                    alt="arrow"
-                    width={12}
-                    height={6}
-
-                  />
-
-
-                </button>
+                <Image
+                  src="/images/arrow.png"
+                  alt="arrow"
+                  width={12}
+                  height={6}
+                  onClick={onClick}
+                  style={{ cursor: "pointer" }}
+                />
               </div>
             </li>
             <li>
@@ -73,7 +70,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className={[styles.subMenu, arrowState].join(" ")}>
+      <div className={arrowState}>
         <Link className={styles.subMenuItems} href='/'>FD Bazaar</Link>
         <Link className={styles.subMenuItems} href='/'>Savings++</Link>
         <Link className={styles.subMenuItems} href='/'>Tax Saver</Link>
