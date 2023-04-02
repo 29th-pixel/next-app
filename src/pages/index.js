@@ -4,6 +4,7 @@ import Announcement from "@/components/Announcement";
 import HeroSectionOne from "@/components/HeroSectionOne";
 import HeroSectionTwo from "@/components/HeroSectionTwo";
 import HeroSectionThree from "@/components/HeroSectionThree";
+import HeroSectionFour from "@/components/HeroSectionFour";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroSectionOne />
         <HeroSectionTwo />
         <HeroSectionThree />
+        <HeroSectionFour />
       </main>
     </>
   );
