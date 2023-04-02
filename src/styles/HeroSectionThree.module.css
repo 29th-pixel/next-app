@@ -1,14 +1,20 @@
-.sectionTwoContainer {
-  background: linear-gradient(180deg, #f6f6f6 0%, #f5fae7 100%);
-  padding: 100px 72px;
+.sectionThreeContainer {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  padding: 100px 72px;
+  background: linear-gradient(
+    180deg,
+    #f7f7f7 0%,
+    rgba(255, 255, 255, 0.95) 35.27%
+  );
 }
 
 .contentImage {
   width: 500px;
   height: 500px;
+  display: flex;
   background: #f4f3f3;
   flex: none;
   order: 0;
@@ -18,7 +24,7 @@
 .contentContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   gap: 24px;
   flex: none;
@@ -45,7 +51,6 @@
   line-height: 2.5vw;
   display: flex;
   align-items: center;
-  text-align: right;
   width: 48.62vw;
 }
 
@@ -64,7 +69,7 @@
 
 /* for ipad view */
 @media only screen and (max-width: 1439px) {
-  .sectionTwoContainer {
+  .sectionThreeContainer {
     height: 540px;
   }
 
@@ -75,12 +80,12 @@
 }
 
 /* mobile view */
-@media only screen and (max-width: 480px) and (min-width: 320px) {
-  .sectionTwoContainer {
+@media only screen and (max-width: 480px) and (min-width: 280px) {
+  .sectionThreeContainer {
+    flex-direction: column;
     height: 652px;
     flex-direction: column;
     padding: 48px 24px;
-    align-items: flex-start;
   }
 
   .contentImage {
