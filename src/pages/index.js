@@ -5,7 +5,7 @@ import HeroSectionOne from "@/components/HeroSectionOne";
 import HeroSectionTwo from "@/components/HeroSectionTwo";
 import HeroSectionThree from "@/components/HeroSectionThree";
 import HeroSectionFour from "@/components/HeroSectionFour";
-// const inter = Inter({ subsets: ["latin"] });
+import HeroSectionEight from "@/components/HeroSectionEight";
 
 export default function Home() {
   return (
@@ -22,6 +22,7 @@ export default function Home() {
         <HeroSectionTwo />
         <HeroSectionThree />
         <HeroSectionFour />
+        <HeroSectionEight />
       </main>
     </>
   );

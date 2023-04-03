@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
 
@@ -75,6 +76,8 @@ const Navbar = () => {
         <Link className={styles.subMenuItems} href='/'>Savings++</Link>
         <Link className={styles.subMenuItems} href='/'>Tax Saver</Link>
       </div>
+
+      {/* <HamburgerMenu/> */}
 
     </>
   );
