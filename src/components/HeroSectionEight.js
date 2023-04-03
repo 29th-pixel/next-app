@@ -1,27 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/HeroSectionEight.module.css'
-
-export const Data = [
-    {
-        id: 1,
-        heading: "Safe investments that beat inflation",
-        content: "Low risk, High return investments that are easy to understand",
-        imageSrc: "/images/upArrow.png"
-    },
-    {
-        id: 2,
-        heading: "Safe investments that protect capital",
-        content: "Get access to stable and low risk investment options for goals where you cannot afford losses",
-        imageSrc: "/images/safe.png"
-    },
-    {
-        id: 3,
-        heading: "Liquid investments to manage emergencies",
-        content: "Choose across investments that you can easily withdraw and liquidate in times of need",
-        imageSrc: "/images/plus.png"
-    },
-]
+import Data from '../pages/api/pageData.json'
 
 const HeroSectionEight = () => {
     return (
@@ -35,7 +15,7 @@ const HeroSectionEight = () => {
                 </div>
 
                 <div className={styles.cardsContainer}>
-                    {Data.map((item) => {
+                    {Data.whyInvestment.map((item) => {
                         return (
                             // eslint-disable-next-line react/jsx-key
                             <div className={styles.card}>

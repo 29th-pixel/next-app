@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import announceData from "../pages/api/announceData.json";
+import announceData from "../pages/api/pageData.json";
 import styles from "../styles/Announcement.module.css"
 
 const Announcement = () => {
@@ -15,11 +15,11 @@ const Announcement = () => {
         className={styles.megaPhone}
       />
 
-      <p>{announceData[0].announce.text}</p>
+      <p>{announceData.announce.text}</p>
 
       <Link
         className={styles.takeActionBttn}
-        href={announceData[0].announce.href}
+        href={announceData.announce.href}
       >
         Take Action
       </Link>
