@@ -8,6 +8,8 @@ import HeroSectionFour from "@/components/HeroSectionFour";
 import HeroSectionFive from "@/components/HeroSectionFive";
 import HeroSectionSix from "@/components/HeroSectionSix";
 import HeroSectionSeven from "@/components/HeroSectionSeven";
+import HeroSectionEight from "@/components/HeroSectionEight";
+import HeroSectionNine from "@/components/HeroSectionNine";
 
 export default function Home() {
   return (
@@ -25,8 +27,10 @@ export default function Home() {
         <HeroSectionThree />
         <HeroSectionFour />
         <HeroSectionFive />
-        <HeroSectionSix/>
-        <HeroSectionSeven />
+        <HeroSectionSix />
+        {/* <HeroSectionSeven /> */}
+        <HeroSectionEight />
+        <HeroSectionNine />
       </main>
     </>
   );

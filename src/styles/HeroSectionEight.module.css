@@ -1,0 +1,56 @@
+.sectionContainer {
+  padding: 100px 72px;
+  gap: 32px;
+  background: linear-gradient(180deg, #f6f6f6 0%, #ffffff 17.24%, #ffffff 100%);
+  border-radius: 0px 0px 80px 80px;
+}
+
+.contentContainer {
+  gap: 80px;
+  top: 100px;
+  height: 431px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+}
+
+.contentHeading {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #121b64;
+}
+
+.content {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #32302f;
+}
+
+.contentImages {
+  height: 170px;
+  width: 1060px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
