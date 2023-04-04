@@ -81,10 +81,18 @@
   color: #000000;
 }
 
-.hideSubMenu {
+.hideSubMenu
+{
   display: none;
 }
 
+.hideSideMenu {
+  display: none;
+}
+
+.showSideMenu {
+  display: flex;
+}
 /* ********************************************************************* */
 
 /* ipad view */

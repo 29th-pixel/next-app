@@ -7,6 +7,7 @@ import HamburgerMenu from "./HamburgerMenu";
 const Navbar = () => {
 
   const [arrowState, setArrowState] = useState(styles.hideSubMenu)
+  const [menuState, setMenuState] = useState(styles.hideSideMenu)
 
   const onClick = () => {
     if (arrowState === styles.hideSubMenu)
@@ -14,6 +15,13 @@ const Navbar = () => {
     else
       setArrowState(styles.hideSubMenu);
   };
+
+  const onClickSideMenu = () => {
+    if (menuState === styles.hideSideMenu)
+      setMenuState(styles.showSideMenu);
+    else
+      setMenuState(styles.hideSideMenu);
+  }
 
   return (
     <>
@@ -28,7 +36,6 @@ const Navbar = () => {
 
             className={styles.navbarLogo}
           />
-
         </Link>
         <div className={styles.navContainer}>
           <ul>
@@ -67,7 +74,10 @@ const Navbar = () => {
             src="/images/navbar/hamburgerIcon.png"
             width={24}
             height={24}
-            alt="Menu Icon" />
+            alt="Menu Icon"
+            onClick={onClickSideMenu}
+            style={{ cursor: "pointer" }}
+          />
         </div>
       </nav>
 
@@ -77,8 +87,9 @@ const Navbar = () => {
         <Link className={styles.subMenuItems} href='/'>Tax Saver</Link>
       </div>
 
-      {/* <HamburgerMenu/> */}
-
+      <div className={menuState}>
+        <HamburgerMenu />
+      </div>
     </>
   );
 };

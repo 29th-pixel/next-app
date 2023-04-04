@@ -3,6 +3,9 @@
 .menuContainer {
   width: 100%;
   height: calc(100vh - 162px);
+  background: #ffffff;
+  position: absolute;
+  z-index: 1;
 }
 
 .nav {
