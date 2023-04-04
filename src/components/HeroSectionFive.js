@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '../styles/HeroSectionEight.module.css'
+import styles from '../styles/HeroSectionFive.module.css'
 import Data from '../pages/api/pageData.json'
 
-const HeroSectionEight = () => {
+const HeroSectionFive = () => {
     return (
         <div className={['pageContainer', styles.sectionEightContainer].join(" ")}>
             <div className={styles.contentContainer}>
@@ -22,7 +22,7 @@ const HeroSectionEight = () => {
                                 <div className={styles.cardHead}>
                                     <Image
                                         src={item.imageSrc}
-                                        alt='uparrow'
+                                        alt='NA'
                                         width={26}
                                         height={26}
                                         className={styles.cardHeadImage}
@@ -40,4 +40,4 @@ const HeroSectionEight = () => {
     )
 }
 
-export default HeroSectionEight
+export default HeroSectionFive

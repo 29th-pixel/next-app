@@ -6,7 +6,7 @@ const HeroSectionOne = () => {
   return (
     <div className={["pageContainer", styles.sectionOneContainer].join(" ")}>
       <Image
-        src="/images/rupeeGoldCoin.png"
+        src="/images/sectionOne/rupeeGoldCoin.png"
         alt="gold coin image"
         width={300}
         height={300}
@@ -14,7 +14,7 @@ const HeroSectionOne = () => {
       />
 
       <Image
-        src="/images/fCoin.png"
+        src="/images/sectionOne/fCoin.png"
         alt="f coin image"
         width={340}
         height={340}
@@ -31,7 +31,7 @@ const HeroSectionOne = () => {
       </div>
 
       <Image
-        src="/images/percentCoin.png"
+        src="/images/sectionOne/percentCoin.png"
         alt="percent coin"
         width={220}
         height={220}
@@ -39,7 +39,7 @@ const HeroSectionOne = () => {
       />
 
       <Image
-        src="/images/arrowCoin.png"
+        src="/images/sectionOne/arrowCoin.png"
         alt="arrow coin"
         width={228}
         height={228}

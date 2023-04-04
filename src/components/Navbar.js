@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link href="\">
 
           <Image
-            src="/images/topLogo.png"
+            src="/images/navbar/topLogo.png"
             alt="top logo"
             width={108.75}
             height={30}
@@ -38,7 +38,7 @@ const Navbar = () => {
                   Invest
                 </Link>
                 <Image
-                  src="/images/arrow.png"
+                  src="/images/navbar/arrow.png"
                   alt="arrow"
                   width={12}
                   height={6}
@@ -64,7 +64,7 @@ const Navbar = () => {
 
         <div className={styles.hamburgerMenu}>
           <Image
-            src="/images/hamburgerIcon.png"
+            src="/images/navbar/hamburgerIcon.png"
             width={24}
             height={24}
             alt="Menu Icon" />

@@ -8,7 +8,7 @@ const Announcement = () => {
   return (
     <div className={styles.announcementBar}>
       <Image
-        src="/images/megaphone.png"
+        src="/images/announcement/megaphone.png"
         alt="top logo"
         width={29.5}
         height={22.27}
