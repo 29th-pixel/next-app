@@ -24,7 +24,7 @@
 }
 
 .contentHeading {
-  font-family: "Futura PT";
+  font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 4.45vw;
@@ -33,7 +33,7 @@
 }
 
 .content {
-  font-family: "Futura PT";
+  font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.95vw;
@@ -76,7 +76,7 @@
 
 .cardHeading {
   width: 100%;
-  font-family: "Futura PT";
+  font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -94,7 +94,7 @@
 
 .cardContent {
   width: 100%;
-  font-family: "Futura PT";
+  font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

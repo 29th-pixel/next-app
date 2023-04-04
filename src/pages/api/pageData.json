@@ -23,5 +23,42 @@
       "content": "Choose across investments that you can easily withdraw and liquidate in times of need",
       "imageSrc": "/images/sectionFive/plus.png"
     }
+  ],
+
+  "learningBlogs": [
+    {
+      "id": 1,
+      "imageSrc": "/images/sectionSix/coinVase.png",
+      "blogHeading": "Save money, the right way",
+      "blogIntro": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      "date": "24 May 2023",
+      "readMoreSrc": "/"
+    },
+
+    {
+      "id": 2,
+      "imageSrc": "/images/sectionSix/coins.png",
+      "blogHeading": "Save money, the right way. Second line test",
+      "blogIntro": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      "date": "24 May 2023",
+      "readMoreSrc": "/"
+    },
+
+    {
+      "id": 3,
+      "imageSrc": "/images/sectionSix/notes.png",
+      "blogHeading": "Save money, the right way. Second line test",
+      "blogIntro": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      "date": "24 May 2023",
+      "readMoreSrc": "/"
+    },
+    {
+      "id": 4,
+      "imageSrc": "/images/sectionSix/coinVase.png",
+      "blogHeading": "Save money, the right way",
+      "blogIntro": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      "date": "24 May 2023",
+      "readMoreSrc": "/"
+    }
   ]
 }
