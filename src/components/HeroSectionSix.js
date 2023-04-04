@@ -42,8 +42,8 @@ const HeroSectionSix = () => {
                             </div>
                         )
                     })}
-
                 </div>
+                <button className={styles.moreBttn} href='/'>More Insights</button>
             </div>
         </div>
     )
