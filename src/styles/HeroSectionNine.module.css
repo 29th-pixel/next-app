@@ -1,0 +1,75 @@
+.sectionContainer {
+  padding: 100px 72px;
+  gap: 32px;
+  background: linear-gradient(180deg, #f6f6f6 0%, #ffffff 17.24%, #ffffff 100%);
+  border-radius: 0px 0px 80px 80px;
+}
+
+.contentContainer {
+  gap: 80px;
+  top: 100px;
+  height: 432px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+}
+
+.contentHeading {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #121b64;
+}
+
+.content {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #32302f;
+}
+
+.contentImages {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 256px;
+  height: 181px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer h1 {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #686868;
+}
