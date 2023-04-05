@@ -7,7 +7,6 @@
 
 .contentContainer {
   gap: 80px;
-  top: 100px;
   height: 432px;
   display: flex;
   flex-direction: column;
@@ -51,7 +50,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 256px;
+  justify-content: space-between;
+  width: 100%;
   height: 181px;
 }
 
@@ -60,6 +60,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 
 .imageContainer h1 {
@@ -72,4 +73,92 @@
   align-items: center;
   text-align: center;
   color: #686868;
+}
+
+/* for ipad view */
+@media only screen and (max-width: 1439px) {
+  .sectionContainer {
+    height: 760px;
+  }
+
+  .contentContainer {
+    height: 560px;
+    width: 100%;
+  }
+
+  .contentText {
+    width: 100%;
+  }
+
+  .content {
+    width: 68.3vw;
+  }
+
+  .contentImages {
+    width: 75vw;
+  }
+
+  .imageContainer {
+    width: 127px;
+    height: 117px;
+  }
+}
+
+/* mobile view */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .sectionContainer {
+    height: 402px;
+    background: linear-gradient(
+      180deg,
+      #f6f6f6 0%,
+      #ffffff 52.6%,
+      #ffffff 100%
+    );
+    border-radius: 0px 0px 48px 48px;
+    padding: 48px 24px;
+  }
+
+  .contentContainer {
+    gap: 32px;
+    width: 100%;
+    height: 306px;
+  }
+
+  .contentText {
+    width: 327px;
+    gap: 32px;
+  }
+
+  .contentHeading {
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  .content {
+    font-size: 16px;
+    line-height: 21px;
+    width: 100%;
+  }
+
+  .contentImages {
+    width: 100%;
+    height: 138px;
+  }
+
+  .imageContainer {
+    width: 99px;
+    height: 74px;
+    gap: 8px;
+  }
+
+  .image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .imageContainer h1 {
+    /* change font size to 14 for futura pt */
+    font-size: 12px; 
+    line-height: 18px;
+  }
 }

@@ -43,6 +43,7 @@ const HeroSectionNine = () => {
                                     alt="NA"
                                     width={80}
                                     height={80}
+                                    className={styles.image}
                                 />
                                 <h1>{item.text}</h1>
                             </div>

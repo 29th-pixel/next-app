@@ -19,18 +19,21 @@ const HeroSectionEight = () => {
                         alt="NA"
                         width={285}
                         height={102}
+                        className={styles.yourStoryImage}
                     />
                     <Image
                         src="/images/sectionEight/news18.png"
                         alt="NA"
                         width={289}
                         height={116}
+                        className={styles.news18Image}
                     />
                     <Image
                         src="/images/sectionEight/liveMint.png"
                         alt="NA"
                         width={306}
                         height={94}
+                        className={styles.liveMintImage}
                     />
                 </div>
             </div>
