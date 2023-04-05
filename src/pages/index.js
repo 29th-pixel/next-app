@@ -10,6 +10,7 @@ import HeroSectionSix from "@/components/HeroSectionSix";
 import HeroSectionSeven from "@/components/HeroSectionSeven";
 import HeroSectionEight from "@/components/HeroSectionEight";
 import HeroSectionNine from "@/components/HeroSectionNine";
+import HeroSectionTen from "@/components/HeroSectionTen";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         {/* <HeroSectionSeven /> */}
         <HeroSectionEight />
         <HeroSectionNine />
+        <HeroSectionTen/>
       </main>
     </>
   );
