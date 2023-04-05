@@ -4,15 +4,15 @@
   align-items: center;
   padding: 100px 72px;
   gap: 32px;
-  height: 996px;
-
+  height: 69.16vw;
   background: linear-gradient(180deg, #f6f6f6 0%, #f5fae7 100%);
+  
 }
 
 .contentContainer {
   gap: 80px;
-  height: 711px;
-  width: 1296px;
+  height: 49.375vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,7 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-  height: 450px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .cardImage {
-  padding-top: 8px;
+  padding: 8px;
   border-radius: 6px;
 }
 
@@ -86,8 +86,6 @@
   align-items: flex-start;
   padding: 8px;
   gap: 10px;
-  width: 296px;
-  height: 110px;
 }
 
 .cardContent h1 {
@@ -110,8 +108,6 @@
   align-items: center;
   height: 63px;
   color: #686868;
-  width: 280px;
-  height: 63px;
 }
 
 .cardFooter {
@@ -121,7 +117,8 @@
   align-items: center;
   padding: 8px;
   gap: 10px;
-  width: 296px;
+  /* width: 296px; */
+  width: 100%;
   height: 37px;
 }
 
@@ -162,9 +159,11 @@
 /* for ipad view */
 @media only screen and (max-width: 1439px) {
   .sectionContainer {
-    height: 1407px;
+    /* height: 1407px; */
+    
     gap: 64px;
   }
+
   .contentContainer {
     width: 100%;
     height: 1085px;
@@ -176,56 +175,37 @@
   }
 
   .heading {
-    font-size: 6.25vw;
-    line-height: 7.52vw;
+    font-size: 64px;
+    line-height: 77px;
   }
 
   .content {
-    font-size: 2.73vw;
-    line-height: 3.5vw;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .cardContainer {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
     gap: 24px;
-    width: 86vw;
-    height: 824px;
   }
 
   .card {
-    width: 42.1vw;
-    height: 29.28vh;
+    /* width: 41vw;
+    height: 29.28vh; */
     gap: 8px;
+    width: 432px;
+    height: 400px;
+    /* max-width: 432px;
+    max-height: 400px; */
   }
-
+  
   .cardImage {
-    width: 40.62vw;
-    height: 14.86vh;
+    /* width: 40.62vw;
+    height: 14.86vh; */
     border-radius: 6px;
-  }
-
-  .cardContent {
-    width: 40.62vw;
-    height: 6.52vh;
-  }
-
-  .cardContent h1 {
-    font-size: 1.56vw;
-    line-height: 2.05vw;
-  }
-
-  .cardContent p {
-    width: 100%;
-    height: 3.07vh;
-    font-size: 1.56vw;
-    line-height: 2.05vw;
-  }
-
-  .cardFooter {
-    width: 100%;
-    height: 2.7vh;
+    /* max-width: 416px;
+    max-height: 203px; */
+    width: 416px;
+    height: 203px;
   }
 }
 
