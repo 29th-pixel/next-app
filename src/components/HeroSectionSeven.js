@@ -19,7 +19,7 @@ const HeroSectionSeven = () => {
                     <div className={styles.topFounder}>
                         <div className={styles.founderCard}>
                             <Image
-                                src="/images/sectionTen/aksharShah.png"
+                                src="/images/sectionSeven/aksharShah.png"
                                 width={246}
                                 height={282}
                                 alt="NA"
@@ -31,7 +31,7 @@ const HeroSectionSeven = () => {
                                     <p className={styles.designation}>Founder and CEO</p>
                                 </div>
                                 <Image
-                                    src="/images/sectionTen/linkedin.png"
+                                    src="/images/sectionSeven/linkedin.png"
                                     alt="NA"
                                     width={24}
                                     height={22.93}
@@ -43,7 +43,7 @@ const HeroSectionSeven = () => {
 
                         <div className={styles.quoteContainer}>
                             <Image
-                                src="/images/sectionten/quotesOpen.png"
+                                src="/images/sectionSeven/quotesOpen.png"
                                 alt="NA"
                                 width={59.25}
                                 height={38.26}
@@ -53,7 +53,7 @@ const HeroSectionSeven = () => {
                                 Our vision is to make safe investments with better returns easily accessibly to all indians
                             </p>
                             <Image
-                                src="/images/sectionten/quotesClose.png"
+                                src="/images/sectionSeven/quotesClose.png"
                                 alt="NA"
                                 width={59.25}
                                 height={38.26}
@@ -82,7 +82,7 @@ const HeroSectionSeven = () => {
                                             <p className={styles.designation}>{item.designation}</p>
                                         </div>
                                         <Image
-                                            src="/images/sectionTen/linkedin.png"
+                                            src="/images/sectionSeven/linkedin.png"
                                             alt="NA"
                                             width={24}
                                             height={22.93}
