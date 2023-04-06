@@ -4,14 +4,13 @@
   align-items: center;
   padding: 100px 72px;
   gap: 32px;
-  height: 69.16vw;
+  height: auto;
   background: linear-gradient(180deg, #f6f6f6 0%, #f5fae7 100%);
-  
 }
 
 .contentContainer {
   gap: 80px;
-  height: 49.375vw;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -24,16 +23,18 @@
   align-items: center;
   padding: 0px;
   gap: 32px;
-  height: 20.78vh;
-  width: 65.625vw;
+
+  min-width: 945px;
+  width: min-content;
+  height: auto;
 }
 
 .heading {
   font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 4.45vw;
-  line-height: 5.34vw;
+  font-size: 64px;
+  line-height: 77px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -44,8 +45,8 @@
   font-family: "Futura PT", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.94vw;
-  line-height: 2.5vw;
+  font-size: 28px;
+  line-height: 36px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -106,7 +107,7 @@
   line-height: 21px;
   display: flex;
   align-items: center;
-  height: 63px;
+  height: auto;
   color: #686868;
 }
 
@@ -117,7 +118,6 @@
   align-items: center;
   padding: 8px;
   gap: 10px;
-  /* width: 296px; */
   width: 100%;
   height: 37px;
 }
@@ -159,19 +159,19 @@
 /* for ipad view */
 @media only screen and (max-width: 1439px) {
   .sectionContainer {
-    /* height: 1407px; */
-    
     gap: 64px;
   }
 
   .contentContainer {
     width: 100%;
-    height: 1085px;
+    height: auto;
   }
 
   .headingContainer {
-    width: 85.9vw;
-    height: 181px;
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+    min-width: 0;
   }
 
   .heading {
@@ -189,42 +189,44 @@
   }
 
   .card {
-    /* width: 41vw;
-    height: 29.28vh; */
     gap: 8px;
-    width: 432px;
-    height: 400px;
-    /* max-width: 432px;
-    max-height: 400px; */
+    max-width: 432px;
+    /* max-height: 400px; */
+    width: calc(50% - 24px);
+    height: auto;
+  }
+
+  .cardImage {
+    width: 100%;
+    height: 203px;
+    object-fit: cover;
   }
   
-  .cardImage {
-    /* width: 40.62vw;
-    height: 14.86vh; */
-    border-radius: 6px;
-    /* max-width: 416px;
-    max-height: 203px; */
-    width: 416px;
-    height: 203px;
+  .cardFooter {
+    margin-top: 55px;
   }
+
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
   .sectionContainer {
     padding: 48px 24px;
-    height: 1600px;
+    /* height: 1600px; */
     /* TO be changed to 989px when the section only contains 2 cards */
   }
 
   .contentContainer {
     gap: 32px;
-    width: 327px;
-    height: 808px;
+    /* width: 327px;
+    height: 808px; */
   }
 
   .headingContainer {
-    width: 327px;
-    height: 177px;
+    /* width: 327px;
+    height: 177px; */
+    width: 100%;
+    height: auto;
+    max-width: 327px;
   }
 
   .heading {
@@ -242,28 +244,27 @@
     flex-direction: column;
     padding: 0px;
     gap: 16px;
-    width: 327px;
-    height: 1217px;
     flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: auto;
   }
 
   .card {
-    width: 327px;
-    height: 290px;
+    max-width: 327px;
+    width: 100%;
+    height: auto;
     padding: 8px 8px 0px;
     gap: 8px;
   }
 
   .cardImage {
-    width: 311px;
     height: 150px;
   }
 
   .cardContent {
     padding: 0px;
     gap: 4px;
-    width: 311px;
-    height: 79px;
   }
 
   .cardContent h1 {
@@ -274,15 +275,13 @@
   .cardContent p {
     font-size: 14px;
     line-height: 18px;
-    width: 311px;
-    height: 54px;
   }
 
   .cardFooter {
     padding: 8px;
     gap: 4px;
-    width: 311px;
     height: 37px;
+    margin: 0;
   }
 
   .cardFooter p {

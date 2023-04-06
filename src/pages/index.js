@@ -29,7 +29,7 @@ export default function Home() {
         <HeroSectionThree />
         <HeroSectionFour />
         <HeroSectionFive />
-        {/* <HeroSectionSix /> */}
+        <HeroSectionSix />
         <HeroSectionSeven />
         <HeroSectionEight />
         <HeroSectionNine />
