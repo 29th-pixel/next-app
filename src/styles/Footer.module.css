@@ -15,8 +15,6 @@
   gap: 30px;
   width: fit-content;
   position: relative;
-  /* left: 72px;
-  top: 100px; */
   margin-left: 72px;
   margin-top: 100px;
 }
@@ -34,7 +32,6 @@
 .optionsContainer {
   position: relative;
   margin-top: 100px;
-  /* margin-left: 135px; */
   margin-right: 76px;
   width: auto;
   display: flex;
@@ -105,11 +102,25 @@
   text-decoration: none;
 }
 
+.investContainer {
+  margin-left: 48px !important;
+}
+
 .divider {
   border: 1px solid #dfdede;
   width: calc(100vw - 144px);
   margin-left: 72px;
   margin-right: 72px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 144px);
+  margin-left: 72px;
+  margin-bottom: 64px;
 }
 
 .licensingText {
@@ -121,8 +132,6 @@
   color: #f6f6f6;
   width: auto;
   max-width: 147px;
-  margin-left: 72px;
-  margin-bottom: 64px;
 }
 
 .mediaHandles {
@@ -130,6 +139,114 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 24px;
-  margin-bottom: 70px;
-  margin-right: 72px;
+}
+
+/* for ipad view */
+@media only screen and (max-width: 1439px) {
+  .sectionContainer {
+    height: 579px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .optionsContainer {
+    order: 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 37px;
+    margin: 0;
+    width: 100vw;
+    max-width: 880px;
+    margin-top: 64px;
+  }
+
+  .companyContainer {
+    margin: 0 !important;
+  }
+
+  .investContainer {
+    margin: 0;
+  }
+
+  .summaryContainer {
+    order: 1;
+    width: 100vw;
+    max-width: 880px;
+    margin: 0;
+  }
+
+  .divider {
+    order: 2;
+    width: 100vw;
+    max-width: 880px;
+    margin-top: 32px;
+  }
+  .linksContainer {
+    order: 3;
+    margin-left: 0;
+    width: 100vw;
+    max-width: 880px;
+  }
+}
+
+/* mobile view */
+@media only screen and (max-width: 480px) and (min-width: 280px) {
+  .sectionContainer {
+    /* padding: 64px 24px; */
+    gap: 32px;
+    height: 687px;
+  }
+
+  .summaryContainer {
+    max-width: 327px;
+    gap: 16px;
+  }
+
+  .summaryContainer p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .optionsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 327px;
+  }
+
+  .contactContainer {
+    gap: 8px;
+    max-width: 327px;
+    order: 2;
+  }
+
+  .companyContainer {
+    order: 1;
+  }
+
+  .contactContainer p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .companyItems {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .investContainer {
+    order: 0;
+  }
+
+  .divider {
+    width: calc(100vw - 48px);
+    max-width: 327px;
+  }
+
+  .linksContainer {
+    max-width: 327px;
+  }
 }

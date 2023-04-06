@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.companyContainer} style={{ marginLeft: "48px" }}>
+        <div className={[styles.companyContainer, styles.investContainer].join(" ")}>
           <h1>Invest</h1>
           <div className={styles.companySubOptions}>
             <ul style={{ listStyle: 'none' }}>
@@ -81,23 +81,25 @@ const Footer = () => {
 
       <hr className={styles.divider} />
 
-      <div className={styles.licensingText}>
-        <p>{Data.footer.licensingText}</p>
-      </div>
+      <div className={styles.linksContainer}>
+        <div className={styles.licensingText}>
+          <p>{Data.footer.licensingText}</p>
+        </div>
 
-      <div className={styles.mediaHandles}>
-        {Data.footer.socialMediaHandles.map((item) => {
-          return (
-            // eslint-disable-next-line react/jsx-key
-            <Image 
-              src={item.imageSrc}
-              alt={item.handle}
-              width={24}
-              height={24}
-              href={item.href}
-            />
-          )
-        })}
+        <div className={styles.mediaHandles}>
+          {Data.footer.socialMediaHandles.map((item) => {
+            return (
+              // eslint-disable-next-line react/jsx-key
+              <Image
+                src={item.imageSrc}
+                alt={item.handle}
+                width={24}
+                height={24}
+                href={item.href}
+              />
+            )
+          })}
+        </div>
       </div>
     </div >
   )
