@@ -28,8 +28,8 @@ export default function Home() {
         <HeroSectionThree />
         <HeroSectionFour />
         <HeroSectionFive />
-        <HeroSectionSix />
-        {/* <HeroSectionSeven /> */}
+        {/* <HeroSectionSix /> */}
+        <HeroSectionSeven />
         <HeroSectionEight />
         <HeroSectionNine />
         <HeroSectionTen/>
