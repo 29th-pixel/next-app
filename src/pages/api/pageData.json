@@ -62,9 +62,9 @@
     }
   ],
 
-  "founderData" : [
+  "founderData": [
     {
-      "id" : 1,
+      "id": 1,
       "founderFirstName": "Akshar ",
       "founderSecondName": "Shah",
       "imageSrc": "/images/sectionTen/founder1.png",
@@ -72,7 +72,7 @@
       "profileLink": "/"
     },
     {
-      "id" : 2,
+      "id": 2,
       "founderFirstName": "Akshar ",
       "founderSecondName": "Shah",
       "imageSrc": "/images/sectionTen/founder2.png",
@@ -80,7 +80,7 @@
       "profileLink": "/"
     },
     {
-      "id" : 3,
+      "id": 3,
       "founderFirstName": "Akshar ",
       "founderSecondName": "Shah",
       "imageSrc": "/images/sectionTen/founder3.png",
@@ -88,7 +88,7 @@
       "profileLink": "/"
     },
     {
-      "id" : 4,
+      "id": 4,
       "founderFirstName": "Akshar ",
       "founderSecondName": "Shah",
       "imageSrc": "/images/sectionTen/founder4.png",
@@ -96,7 +96,7 @@
       "profileLink": "/"
     },
     {
-      "id" : 5,
+      "id": 5,
       "founderFirstName": "Akshar ",
       "founderSecondName": "Shah",
       "imageSrc": "/images/sectionTen/founder5.png",
