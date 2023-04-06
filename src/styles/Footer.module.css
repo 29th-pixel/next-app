@@ -1,0 +1,135 @@
+.sectionContainer {
+  height: 584px;
+  background: #121b64;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: fit-content;
+  position: relative;
+  /* left: 72px;
+  top: 100px; */
+  margin-left: 72px;
+  margin-top: 100px;
+}
+
+.summaryContainer p {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #f6f6f6;
+  max-width: 342px;
+}
+
+.optionsContainer {
+  position: relative;
+  margin-top: 100px;
+  /* margin-left: 135px; */
+  margin-right: 76px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  max-width: 342px;
+}
+
+.contactContainer h1 {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.contactContainer p {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #f6f6f6;
+}
+
+.contactNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 0px;
+  gap: 10px;
+}
+
+.companyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 13px;
+  width: fit-content;
+  margin-left: 174px;
+}
+
+.companyContainer h1 {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.companyItems {
+  font-family: "Futura PT", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+.divider {
+  border: 1px solid #dfdede;
+  width: calc(100vw - 144px);
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.licensingText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #f6f6f6;
+  width: auto;
+  max-width: 147px;
+  margin-left: 72px;
+  margin-bottom: 64px;
+}
+
+.mediaHandles {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 70px;
+  margin-right: 72px;
+}

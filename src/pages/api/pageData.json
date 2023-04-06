@@ -103,5 +103,79 @@
       "designation": "Founder and CEO",
       "profileLink": "/"
     }
-  ]
+  ],
+
+  "footer": {
+    "contactUs": "+91 9876543210 ",
+    "companySection": [
+      {
+        "id": 1,
+        "optionName": "About Us",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "optionName": "Career",
+        "href": "/"
+      },
+      {
+        "id": 3,
+        "optionName": "Features",
+        "href": "/"
+      },
+      {
+        "id": 4,
+        "optionName": "Mission",
+        "href": "/"
+      },
+      {
+        "id": 5,
+        "optionName": "Need & Support",
+        "href": "/"
+      }
+    ],
+    "investSection": [
+      {
+        "id": 1,
+        "optionName": "FD Bazaar",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "optionName": "Savings++",
+        "href": "/"
+      },
+      {
+        "id": 3,
+        "optionName": "Tax Saver",
+        "href": "/"
+      },
+      {
+        "id": 4,
+        "optionName": "Regular Income",
+        "href": "/"
+      }
+    ],
+    "licensingText": "© 2023 Fixerra Pvt Ltd",
+    "socialMediaHandles": [
+      {
+        "id": 1,
+        "handle": "Youtube",
+        "imageSrc": "/images/footer/youtube.png",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "handle": "Facebook",
+        "imageSrc": "/images/footer/facebook.png",
+        "href": "/"
+      },
+      {
+        "id": 3,
+        "handle": "Linkedin",
+        "imageSrc": "/images/footer/linkedin.png",
+        "href": "/"
+      }
+    ]
+  }
 }
