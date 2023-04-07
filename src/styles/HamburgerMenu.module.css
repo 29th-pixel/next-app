@@ -1,15 +1,19 @@
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
 
 .sectionContainer {
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
 }
 
 .menuContainer {
   width: 100%;
   height: calc(100vh - 162px);
   background: #ffffff;
-  position: absolute;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav {
@@ -17,8 +21,10 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 72px;
-  height: 23.15vh;
+  height: auto;
   justify-content: space-evenly;
+  width: 100vw;
+  max-width: 1024px;
 }
 
 .nav div {
@@ -52,6 +58,7 @@
   justify-content: center;
   align-items: center;
   height: 92px;
+  width: 100vw;
   background: #ffffff;
   box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -65,7 +72,9 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
-  width: 85.93vw;
+  width: 100vw;
+  max-width: 1024px;
+  margin: 0 72px;
   height: 58px;
   color: #ffffff;
   background: #121b64;
