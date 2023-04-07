@@ -18,7 +18,7 @@ const HamburgerMenu = () => {
         <div className={styles.sectionContainer}>
             <div className={styles.menuContainer}>
                 <nav className={styles.nav}>
-                    <div className={styles.subMenuBttn}>
+                    <div className={[styles.menuItemContainer, styles.subMenuBttn].join(" ")}>
                         <Link className={styles.menuItems} href="/">
                             Invest
                         </Link>
@@ -30,19 +30,17 @@ const HamburgerMenu = () => {
                             onClick={subInvest}
                         />
                     </div>
-                    {/* <div className={styles.subMenuInvest}>
-                        <ul>
-                            <li><Link href='/'>FD Bazaar</Link></li>
-                            <li><Link href='/'>Savings++</Link></li>
-                            <li><Link href='/'>Tax Saver</Link></li>
-                        </ul>
-                    </div> */}
-                    <div>
+                    <div className={subInvestState}>
+                        <Link className={styles.subMenuItems} href='/'>FD Bazaar</Link>
+                        <Link className={styles.subMenuItems} href='/'>Savings++</Link>
+                        <Link className={styles.subMenuItems} href='/'>Tax Saver</Link>
+                    </div>
+                    <div className={styles.menuItemContainer}>
                         <Link className={styles.menuItems} href="/">
                             Blogs
                         </Link>
                     </div>
-                    <div>
+                    <div className={styles.menuItemContainer}>
                         <Link className={styles.menuItems} href="/">
                             About
                         </Link>

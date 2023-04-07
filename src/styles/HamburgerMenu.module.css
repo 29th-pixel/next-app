@@ -1,96 +1,134 @@
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
 
 .sectionContainer {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  z-index: 1;
+  display: none;
 }
 
-.menuContainer {
-  width: 100%;
-  height: calc(100vh - 162px);
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* ipad view */
+@media only screen and (max-width: 1439px) {
+  .sectionContainer {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
+  }
 
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 72px;
-  height: auto;
-  justify-content: space-evenly;
-  width: 100vw;
-  max-width: 1024px;
-}
+  .menuContainer {
+    width: 100%;
+    height: calc(100vh - 162px);
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.nav div {
-  border-bottom: 1px solid #dfdede;
-  width: 100%;
-  padding: 32px 0px;
-  gap: 10px;
-  display: flex;
-  height: 7.71vh;
-}
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 72px;
+    height: auto;
+    justify-content: space-evenly;
+    width: 100vw;
+    max-width: 1024px;
+    margin: 0 72px;
+  }
 
-.subMenuBttn {
-  justify-content: space-between;
-}
+  .menuItemContainer {
+    border-bottom: 1px solid #dfdede;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
 
-.menuItems {
-  font-family: "Futura PT", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #121b64;
-  text-decoration: none;
-}
+  .subMenuBttn {
+    justify-content: space-between;
+  }
 
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 92px;
-  width: 100vw;
-  background: #ffffff;
-  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1);
-}
+  .subMenuInvest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Futura PT", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 26px;
-  width: 100vw;
-  max-width: 1024px;
-  margin: 0 72px;
-  height: 58px;
-  color: #ffffff;
-  background: #121b64;
-  border-radius: 32px;
-}
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 32px;
+  }
 
+  .subMenuItems {
+    font-family: "Futura PT", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #32302f;
+  }
+
+  .menuItems {
+    font-family: "Futura PT", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #121b64;
+    text-decoration: none;
+    margin: 32px 0;
+  }
+
+  .hideSubInvest {
+    display: none;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 100vw;
+    background: #ffffff;
+    box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Futura PT", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    width: 100vw;
+    max-width: 1024px;
+    margin: 0 72px;
+    height: 58px;
+    color: #ffffff;
+    background: #121b64;
+    border-radius: 32px;
+  }
+}
 @media only screen and (max-width: 480px) and (min-width: 320px) {
   .menuContainer {
     height: calc(100vh - 119px);
   }
   .nav {
     padding: 0 24px;
+    margin: 0 24px;
   }
   .menuItems {
     font-size: 20px;
     line-height: 26px;
+
+    margin: 16px 0;
   }
 
   .buttonContainer {
@@ -100,5 +138,14 @@
   .button {
     font-size: 16px;
     line-height: 21px;
+    margin: 0 24px;
+  }
+
+  .subMenuInvest {
+    margin-bottom: 24px;
+  }
+  .subMenuItems {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
