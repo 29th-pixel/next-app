@@ -3,8 +3,25 @@ import styles from '../styles/HeroSectionSix.module.css'
 import Image from 'next/image'
 import Data from '../pages/api/pageData.json'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const HeroSectionSix = () => {
+    const [cardData, setCardData] = useState(4);
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            console.log(window.innerHeight, window.innerWidth)
+            if (window.innerWidth <= 480)
+            {
+                setCardData(2);
+            }
+            else {   
+                setCardData(4);
+            }
+        })
+    })
+
     return (
         <div className={["pageContainer", styles.sectionContainer].join(" ")}>
             <div className={styles.contentContainer}>
@@ -17,8 +34,7 @@ const HeroSectionSix = () => {
                 </div>
 
                 <div className={styles.cardContainer}>
-
-                    {Data.learningBlogs.map((item) => {
+                    {Data.learningBlogs.slice(0, cardData).map((item) => {
                         return (
                             // eslint-disable-next-line react/jsx-key
                             <div className={styles.card}>
