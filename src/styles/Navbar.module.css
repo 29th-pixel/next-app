@@ -48,6 +48,11 @@
   background-color: #121b64;
 }
 
+.arrow {
+  cursor: pointer;
+  transition: 0.2s transform ease;
+}
+
 .navDropDown {
   display: flex;
   width: 72px;
@@ -81,8 +86,7 @@
   color: #000000;
 }
 
-.hideSubMenu
-{
+.hideSubMenu {
   display: none;
 }
 
@@ -107,6 +111,9 @@
     display: flex;
   }
   .navContainer ul {
+    display: none;
+  }
+  .subMenu {
     display: none;
   }
 }

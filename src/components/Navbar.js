@@ -11,9 +11,15 @@ const Navbar = () => {
 
   const onClick = () => {
     if (arrowState === styles.hideSubMenu)
+    {
       setArrowState(styles.subMenu);
+      document.getElementById("arrow").style.transform = 'rotate(180deg)';
+    }
     else
+    {
       setArrowState(styles.hideSubMenu);
+      document.getElementById("arrow").style.transform = 'rotate(0deg)';
+    }
   };
 
   const onClickSideMenu = () => {
@@ -33,7 +39,6 @@ const Navbar = () => {
             alt="top logo"
             width={108.75}
             height={30}
-
             className={styles.navbarLogo}
           />
         </Link>
@@ -50,7 +55,8 @@ const Navbar = () => {
                   width={12}
                   height={6}
                   onClick={onClick}
-                  style={{ cursor: "pointer" }}
+                  id = "arrow"
+                  className={styles.arrow}
                 />
               </div>
             </li>
